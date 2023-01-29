@@ -1,0 +1,22 @@
+theme_song = "";
+song = "";
+
+function preload()
+{
+   theme_song = loadSound("harry_potter_theme_1.mp3");
+   song = loadSound("peter_pans_flight.mp3");
+}
+
+function setup()
+{
+    canvas = createCanvas(600, 500);
+    canvas.center();
+
+    video = createCapture(VIDEO);
+    video.hide();
+}
+
+function draw()
+{
+    image(video, 0, 0, 600, 500);
+}
